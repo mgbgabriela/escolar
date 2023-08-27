@@ -3,6 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {TypeOrmModule} from '@nestjs/typeorm';
 import { CiudadModule } from './ciudad/ciudad.module';
+import { EscuelasModule } from './escuelas/escuelas.module';
+import { EstudiantesModule } from './estudiantes/estudiantes.module';
+import { ProfesoresModule } from './profesores/profesores.module';
 
 
 @Module({
@@ -23,6 +26,9 @@ import { CiudadModule } from './ciudad/ciudad.module';
         
     ),
     CiudadModule,
+    EscuelasModule,
+    EstudiantesModule,
+    ProfesoresModule,
   ],
   controllers: [AppController],
   providers: [AppService],
